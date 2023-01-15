@@ -7,7 +7,6 @@ import time
 import uuid
 from database_testing import _DBNAME
 import sqlite3
-total_added = 0
 
 conn = sqlite3.connect(_DBNAME)
 cur = conn.cursor()
@@ -29,7 +28,6 @@ r = cur.fetchone()
 fuuid = r[0]
 start = time.perf_counter()
 blob = indexed[fuuid]
-r = cur.fetchone()
 stop = time.perf_counter()
 print(f"Found {blob} for {fuuid} in {stop - start} seconds")
 
