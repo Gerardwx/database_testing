@@ -1,5 +1,7 @@
 # database_testing
 
+Requires Python >= 3.7
+
 Run in virtual environment:
 * python3 -m venv venv
 * ./venv/bin/pip install -U pip
