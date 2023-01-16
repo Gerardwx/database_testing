@@ -6,4 +6,4 @@ Run in virtual environment:
 * ./venv/bin/pip install -e .
 * source venv/bin/activate
 
-Run create.py prior to running readone.py and/or prefetch.py.
+Run create.py [database size in bytes] prior to running readone.py and/or prefetch.py.
