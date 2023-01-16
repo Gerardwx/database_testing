@@ -11,6 +11,11 @@ total_added = 0
 
 conn = sqlite3.connect(_DBNAME)
 cur = conn.cursor()
+try:
+    # noinspection SqlResolve
+    cur.execute("create unique index key on somedata(uuid)")
+except sqlite3.OperationalError:
+    pass
 # noinspection SqlResolve
 cur.execute("select count(*) from somedata")
 r = cur.fetchone()
