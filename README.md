@@ -1,7 +1,7 @@
 # database_testing
 
 Run in virtual environment:
-* python3 -m venv env
+* python3 -m venv venv
 * ./venv/bin/pip install -U pip
 * ./venv/bin/pip install -e .
 * source venv/bin/activate
